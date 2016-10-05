@@ -1,0 +1,27 @@
+#  Containers:
+#
+#  registry     Hobs repository for packages
+#  mongo        database used by the registry
+#  memcache     memory caching system
+#
+
+registry:
+  build: .
+  ports:
+    - "3002:3002"
+  environment:
+    NODE_ENV: docker
+  links:
+    - mongo
+    - memcache
+  restart: always
+
+mongo:
+  image: mongo
+  volumes:
+    - "/data/db:/data/db"
+  restart: always
+
+memcache:
+  image: memcached
+  restart: always
