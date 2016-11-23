@@ -21,8 +21,8 @@
     "bcryptjs": "^2.3.0",
     "body-parser": "^1.15.2",
     "compression": "^1.6.2",
-    "cookie-session": "^2.0.0-alpha.1",
     "config": "^1.21.0",
+    "cookie-session": "^2.0.0-alpha.1",
     "cors": "^2.8.0",
     "express": "^4.14.0",
     "express-jwt": "^3.4.0",
@@ -34,12 +34,12 @@
     "memjs": "^0.10.0",
     "mongoose": "^4.6.0",
     "morgan": "^1.7.0",
-    "node-uuid": "^1.4.7",
     "nodemailer": "^2.6.0",
     "nodemailer-sparkpost-transport": "^1.0.0",
     "rimraf": "^2.5.4",
     "ssh-url": "^0.1.5",
     "tar": "^2.2.1",
+    "uuid": "^3.0.0",
     "validator": "^5.6.0"
   },
   "devDependencies": {
